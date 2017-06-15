@@ -3,6 +3,7 @@ FROM ubuntu:16.04
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update
+RUN apt-get install software-properties-common
 
 # set environment to Japanese
 RUN apt-get install -y language-pack-ja-base \
