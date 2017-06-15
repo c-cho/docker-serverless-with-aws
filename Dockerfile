@@ -3,7 +3,7 @@ FROM ubuntu:16.04
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update
-RUN apt-get install software-properties-common
+RUN apt-get install -y software-properties-common
 
 # set environment to Japanese
 RUN apt-get install -y language-pack-ja-base \
@@ -29,4 +29,4 @@ RUN apt-get install -y openssh-server
 # Add python 3.6
 RUN add-apt-repository ppa:jonathonf/python-3.6
 RUN apt-get update
-RUN apt-get install python3.6
+RUN apt-get -y install python3.6
