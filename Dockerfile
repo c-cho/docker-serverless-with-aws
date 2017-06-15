@@ -26,6 +26,6 @@ RUN npm install -g serverless
 RUN apt-get install -y git
 RUN apt-get install -y openssh-server
 # Add python 3.6
-sudo add-apt-repository ppa:jonathonf/python-3.6
-sudo apt-get update
-sudo apt-get install python3.6
+RUN add-apt-repository ppa:jonathonf/python-3.6
+RUN apt-get update
+RUN apt-get install python3.6
