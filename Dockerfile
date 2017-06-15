@@ -30,3 +30,4 @@ RUN apt-get install -y openssh-server
 RUN add-apt-repository ppa:jonathonf/python-3.6
 RUN apt-get update
 RUN apt-get -y install python3.6
+RUN apt-get -y install python-pip
