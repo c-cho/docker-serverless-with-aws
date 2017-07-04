@@ -31,3 +31,10 @@ RUN add-apt-repository ppa:jonathonf/python-3.6
 RUN apt-get update
 RUN apt-get -y install python3.6
 RUN apt-get -y install python-pip
+RUN echo "Python version check"
+RUN python -v
+RUN python3 -v
+# Add Gradle
+RUN add-apt-repository ppa:cwchien/gradle
+RUN apt-get update
+RUN apt-get -y install gradle
