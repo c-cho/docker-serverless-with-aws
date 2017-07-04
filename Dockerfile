@@ -31,6 +31,8 @@ RUN add-apt-repository ppa:jonathonf/python-3.6
 RUN apt-get update
 RUN apt-get -y install python3.6
 RUN apt-get -y install python-pip
+# set default python to python3
+RUN alias python=python3
 RUN echo "Python version check"
 RUN python -v
 RUN python3 -v
